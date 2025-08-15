@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Interview Trainer — Auto Scoring</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <h1 class="title">AI Interview Trainer</h1>
+      <span class="pill">Placement Prep 2025</span>
+    </div>
+
+    <!-- Start Section -->
+    <div class="card grid" id="startSection">
+      <label for="role">Select Job Role:</label>
+      <select id="role">
+        <option value="">-- Choose Role --</option>
+        <option value="frontend">Frontend Developer</option>
+        <option value="backend">Backend Developer</option>
+        <option value="data">Data Analyst</option>
+        <option value="fullstack">Full Stack Developer</option>
+        <option value="devops">DevOps Engineer</option>
+        <option value="aiml">AI/ML Engineer</option>
+      </select>
+      <button id="startTest" class="primary">Start Test</button>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quizSection" class="card grid" style="display:none;">
+      <div id="question">Question will appear here</div>
+
+      <div class="row">
+        <button id="startVoice" class="primary">🎙 Start Answering</button>
+        <button id="stopVoice" class="danger">⏹ Stop Answering</button>
+      </div>
+
+      <div>
+        <label>Your Answer:</label>
+        <textarea id="answer" readonly></textarea>
+      </div>
+
+      <button id="nextBtn" class="primary">Next Question</button>
+      <div id="progress" class="muted">Progress: 0 / 0</div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="card grid" style="display:none;">
+      <h2>Test Completed!</h2>
+      <div id="review"></div>
+      <p id="scoreText"></p>
+      <p id="feedback"></p>
+      <button id="restartBtn" class="primary">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

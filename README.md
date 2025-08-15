@@ -9,11 +9,6 @@
 - [Features](#features)  
 - [How It Works](#how-it-works)  
 - [Getting Started](#getting-started)  
-- [Project Structure](#project-structure)  
-- [Customizing Questions](#customizing-questions)  
-- [Technologies Used](#technologies-used)  
-- [Future Enhancements](#future-enhancements)  
-- [License](#license)
 
 ---
 
